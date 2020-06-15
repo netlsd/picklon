@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "744736034429",
+    "firebase_url": "https://picklon-client.firebaseio.com",
+    "project_id": "picklon-client",
+    "storage_bucket": "picklon-client.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:744736034429:android:a729f45c891771e1",
+        "android_client_info": {
+          "package_name": "id.co.picklon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "744736034429-bfi0e239kq0lmspla7t7tlr3ouu4e4q6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "id.co.picklon",
+            "certificate_hash": "9189181f14d6f7af99a3e3164bc4dfd7587cd628"
+          }
+        },
+        {
+          "client_id": "744736034429-j8hm0hrbfnsq2a9fsmso8s2ur1b3henk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8CpEziSRIEIvmMvPhWrUaFtJo_SXUg_k"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "744736034429-j8hm0hrbfnsq2a9fsmso8s2ur1b3henk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

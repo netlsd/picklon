@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <id.co.picklon.ui.view.MenuView
+        android:id="@+id/my_wallet_redeem"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:visibility="gone"
+        app:menuImage="@drawable/my_wallet_redeem"
+        app:menuRightImage="@drawable/ic_right_arrow"
+        app:menuText="@string/redeem_coupon" />
+
+    <id.co.picklon.ui.view.MenuView
+        android:id="@+id/my_wallet_coupons"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:menuImage="@drawable/my_wallet_coupons"
+        app:menuRightImage="@drawable/ic_right_arrow"
+        app:menuText="@string/coupons" />
+
+    <id.co.picklon.ui.view.MenuView
+        android:id="@+id/my_wallet_record"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:menuImage="@drawable/my_wallet_record"
+        app:menuRightImage="@drawable/ic_right_arrow"
+        app:menuText="@string/account_record" />
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <id.co.picklon.ui.view.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:selectedView="@+id/bottom_my_wallet" />
+
+</LinearLayout>

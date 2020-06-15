@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar" />
+
+        <LinearLayout
+            android:id="@+id/order_status_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:id="@+id/order_status_pickup_icon"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_pickup_grey" />
+
+            <ImageView
+                android:id="@+id/order_status_confirm_icon"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_store_confirm_grey" />
+
+            <ImageView
+                android:id="@+id/order_status_progress_icon"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_progress_grey" />
+
+            <ImageView
+                android:id="@+id/order_status_delivered_icon"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_delivered_grey" />
+
+        </LinearLayout>
+
+        <id.co.picklon.ui.view.StatusBubbleLayout
+            android:id="@+id/order_status_bubble_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            app:bl_arrowDirection="top"
+            app:bl_arrowHeight="8dp"
+            app:bl_arrowPosition="0dp"
+            app:bl_arrowWidth="8dp"
+            app:bl_bubbleColor="@color/white"
+            app:bl_cornersRadius="6dp"
+            app:bl_strokeColor="@color/light_grey"
+            app:bl_strokeWidth="1dp">
+
+            <include layout="@layout/item_status_pickup" />
+
+        </id.co.picklon.ui.view.StatusBubbleLayout>
+
+        <Button
+            android:id="@+id/order_status_show_code"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/round_black"
+            android:text="@string/show_qr_code"
+            android:textColor="@color/white"
+            tools:visibility="invisible"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/order_status_go_order_success"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/round_black"
+            android:text="@string/go_order_activity"
+            android:textColor="@color/white"
+            tools:visibility="invisible"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</ScrollView>

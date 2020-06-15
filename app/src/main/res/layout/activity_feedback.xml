@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/feedback_edit"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/shape_rectangle_grey"
+        android:gravity="left"
+        android:hint="@string/feedback_hint"
+        android:maxLength="140"
+        android:padding="10dp" />
+
+    <TextView
+        android:id="@+id/feedback_char_left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="right"
+        tools:text="@string/feedback_char_left" />
+
+    <Button
+        android:id="@+id/feedback_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/round_black"
+        android:text="@string/submit"
+        android:textColor="@color/white" />
+
+</LinearLayout>

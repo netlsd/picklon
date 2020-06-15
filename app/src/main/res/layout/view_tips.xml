@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RadioGroup
+        android:id="@+id/tips_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/tips1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/round_grey"
+            android:button="@null" />
+
+        <View
+            android:id="@+id/line1"
+            android:layout_width="0dp"
+            android:layout_height="3dp"
+            android:layout_weight="1"
+            android:background="@color/grey" />
+
+        <RadioButton
+            android:id="@+id/tips2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/round_grey"
+            android:button="@null" />
+
+        <View
+            android:id="@+id/line2"
+            android:layout_width="0dp"
+            android:layout_height="3dp"
+            android:layout_weight="1"
+            android:background="@color/grey" />
+
+        <RadioButton
+            android:id="@+id/tips3"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/round_grey"
+            android:button="@null" />
+
+        <View
+            android:id="@+id/line3"
+            android:layout_width="0dp"
+            android:layout_height="3dp"
+            android:layout_weight="1"
+            android:background="@color/grey" />
+
+        <RadioButton
+            android:id="@+id/tips4"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/round_grey"
+            android:button="@null" />
+
+        <View
+            android:id="@+id/line4"
+            android:layout_width="0dp"
+            android:layout_height="3dp"
+            android:layout_weight="1"
+            android:background="@color/grey" />
+
+        <RadioButton
+            android:id="@+id/tips5"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/round_grey"
+            android:button="@null" />
+
+    </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/tips_text_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:orientation="horizontal" />
+
+</merge>

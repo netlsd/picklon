@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp">
+
+    <TextView
+        android:id="@+id/all_order_order_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_order_id"
+        android:drawablePadding="5dp"
+        tools:text="Order ID - 12345" />
+
+    <TextView
+        android:id="@+id/all_order_pickup_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/all_order_order_id"
+        android:layout_marginTop="2dp"
+        android:drawableLeft="@drawable/ic_calender_small"
+        android:drawablePadding="5dp"
+        tools:text="Pick up Date: 12 Mary 2016" />
+
+    <TextView
+        android:id="@+id/all_order_pickup_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/all_order_pickup_date"
+        android:layout_marginTop="2dp"
+        android:drawableLeft="@drawable/ic_clocks_small"
+        android:drawablePadding="5dp"
+        tools:text="Pick up Time: 12:30" />
+
+    <TextView
+        android:id="@+id/all_order_pickup_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/all_order_pickup_time"
+        android:layout_marginTop="2dp"
+        android:drawableLeft="@drawable/ic_price"
+        android:drawablePadding="5dp"
+        tools:text="20.000" />
+
+    <id.co.picklon.ui.view.WashStatusView
+        android:id="@+id/all_order_wash_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true" />
+
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="18dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/canceled_order_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_order_id"
+        android:drawablePadding="5dp"
+        android:textColor="@color/light_black"
+        tools:text="Order ID - 9887" />
+
+    <TextView
+        android:id="@+id/canceled_order_pickup_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:drawableLeft="@drawable/ic_calender_small"
+        android:drawablePadding="5dp"
+        android:textColor="@color/medium_grey"
+        tools:text="Pick up date : 7 Auest 2015" />
+
+    <TextView
+        android:id="@+id/canceled_order_pickup_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:drawableLeft="@drawable/ic_clocks_small"
+        android:drawablePadding="5dp"
+        android:textColor="@color/medium_grey"
+        tools:text="Pick up time : 12:00" />
+
+</LinearLayout>

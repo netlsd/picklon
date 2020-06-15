@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="@string/order_id" />
+
+        <TextView
+            android:layout_width="16dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/colon" />
+
+        <TextView
+            android:id="@+id/finished_order_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_order_id"
+            android:drawablePadding="3dp"
+            tools:text="1023ssssssssssssssssss" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="@string/pick_up_time" />
+
+        <TextView
+            android:layout_width="16dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/colon" />
+
+        <TextView
+            android:id="@+id/finished_order_pick_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_calender_small"
+            android:drawablePadding="3dp"
+            tools:text="12 Auguest 2016" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/finished_order_pick_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="96dp"
+            android:drawableLeft="@drawable/ic_clocks_small"
+            android:drawablePadding="3dp"
+            tools:text="09:25" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="@string/deliver_time" />
+
+        <TextView
+            android:layout_width="16dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/colon" />
+
+        <TextView
+            android:id="@+id/finished_order_deliver_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_calender_small"
+            android:drawablePadding="3dp"
+            tools:text="15 Auguestssss 2016" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/finished_order_deliver_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="96dp"
+            android:drawableLeft="@drawable/ic_clocks_small"
+            android:drawablePadding="3dp"
+            tools:text="19:25" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="@string/order_price" />
+
+        <TextView
+            android:layout_width="16dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/colon" />
+
+        <TextView
+            android:id="@+id/finished_order_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_price"
+            android:drawablePadding="3dp"
+            tools:text="20.000" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/finished_order_comments"
+        android:layout_width="250dp"
+        android:layout_height="38dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/round_rect_corner_red"
+        android:text="@string/ratting_and_comments"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+
+    <io.techery.properratingbar.ProperRatingBar
+        android:id="@+id/finished_order_ratingbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:visibility="gone"
+        app:prb_clickable="false"
+        app:prb_defaultRating="4"
+        app:prb_tickNormalDrawable="@drawable/ic_star_blank"
+        app:prb_tickSelectedDrawable="@drawable/ic_star_filled"
+        app:prb_tickSpacing="3dp"
+        app:prb_totalTicks="5" />
+
+</LinearLayout>

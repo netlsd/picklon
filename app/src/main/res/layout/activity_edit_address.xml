@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="40dp"-->
+    <!--android:layout_marginTop="20dp"-->
+    <!--android:text="@string/address"-->
+    <!--android:textColor="@color/colorPrimary" />-->
+
+    <!--<android.support.v7.widget.AppCompatEditText-->
+    <!--android:id="@+id/edit_address_city"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="35dp"-->
+    <!--android:layout_marginRight="35dp"-->
+    <!--android:cursorVisible="false"-->
+    <!--android:drawableLeft="@drawable/ic_city"-->
+    <!--android:drawablePadding="5dp"-->
+    <!--android:drawableRight="@drawable/ic_right_arrow"-->
+    <!--android:focusable="false"-->
+    <!--android:focusableInTouchMode="false"-->
+    <!--android:hint="@string/city_3"-->
+    <!--android:theme="@style/Theme.EditAddess" />-->
+
+    <!--<android.support.v7.widget.AppCompatEditText-->
+    <!--android:id="@+id/edit_address_area"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="35dp"-->
+    <!--android:layout_marginRight="35dp"-->
+    <!--android:cursorVisible="false"-->
+    <!--android:drawablePadding="5dp"-->
+    <!--android:drawableRight="@drawable/ic_right_arrow"-->
+    <!--android:focusable="false"-->
+    <!--android:focusableInTouchMode="false"-->
+    <!--android:hint="@string/area_5"-->
+    <!--android:theme="@style/Theme.EditAddess" />-->
+
+    <!--<android.support.v7.widget.AppCompatEditText-->
+    <!--android:id="@+id/edit_address_street"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="35dp"-->
+    <!--android:layout_marginRight="35dp"-->
+    <!--android:singleLine="true"-->
+    <!--android:drawableLeft="@drawable/ic_street"-->
+    <!--android:drawablePadding="5dp"-->
+    <!--android:hint="@string/street_number"-->
+    <!--android:theme="@style/Theme.EditAddess" />-->
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/edit_address_map"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="60dp"
+        android:drawableLeft="@drawable/ic_map"
+        android:drawablePadding="5dp"
+        android:hint="@string/address"
+        android:singleLine="true"
+        android:theme="@style/Theme.EditAddess" />
+
+    <Button
+        android:id="@+id/edit_address_choose"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/round_rect_corner_red"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/choose_from_maps"
+        android:textColor="@color/white" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/default_address" />
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/edit_address_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:scaleType="fitXY"
+        android:src="@drawable/edit_address_background" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/edit_address_button_bg">
+
+        <Button
+            android:id="@+id/edit_address_delete"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null" />
+
+        <Button
+            android:id="@+id/edit_address_save"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null" />
+
+    </LinearLayout>
+
+</LinearLayout>

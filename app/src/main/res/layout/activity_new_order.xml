@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:gravity="center_vertical"
+            android:padding="8dp">
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/new_order_wash_checkox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-7dp" />
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_rectangle_grey"
+                android:padding="1dp">
+
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </FrameLayout>
+
+            <ImageView
+                android:id="@+id/new_order_minus"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_minus" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/new_order_weight"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:maxLines="1"
+                    android:text="@string/zero"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/new_order_weight_unit"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/kg"
+                    android:textColor="@color/colorPrimary" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/new_order_plus"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_plus" />
+
+        </LinearLayout>
+
+        <View style="@style/DividingLine" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:gravity="center_vertical"
+            android:padding="8dp">
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/new_order_carpet_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-7dp" />
+
+            <ImageView
+                android:id="@+id/new_order_carpet_icon"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/ic_carpet" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/carpet" />
+
+            <ImageView
+                android:id="@+id/new_order_carpet_minus"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_minus" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/new_order_meters"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:maxLines="1"
+                    android:text="@string/zero"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/new_order_meters_unit"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/unit_meters"
+                    android:textColor="@color/colorPrimary" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/new_order_carpet_plus"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_plus" />
+
+        </LinearLayout>
+
+        <View style="@style/DividingLine" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/pick_up_address"
+            android:textColor="@color/black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/shape_rectangle_grey"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_map" />
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/new_order_address"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:focusable="false"
+                android:singleLine="true"
+                android:textColor="@color/grey" />
+
+            <ImageView
+                android:id="@+id/new_order_address_icon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_edit" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/pick_up_time"
+            android:textColor="@color/black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:id="@+id/pick_up_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/shape_rectangle_grey"
+                android:drawableRight="@drawable/ic_calender"
+                android:gravity="center"
+                android:padding="10dp"
+                tools:text="15 June 2016" />
+
+            <TextView
+                android:id="@+id/pick_up_time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_rectangle_grey"
+                android:drawableRight="@drawable/ic_clocks"
+                android:gravity="center"
+                android:padding="10dp"
+                tools:text="12:00" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/deliver_time"
+            android:textColor="@color/black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:id="@+id/deliver_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/shape_rectangle_grey"
+                android:drawableRight="@drawable/ic_calender"
+                android:gravity="center"
+                android:padding="10dp"
+                tools:text="15 June 2016" />
+
+            <TextView
+                android:id="@+id/deliver_time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_rectangle_grey"
+                android:drawableRight="@drawable/ic_clocks"
+                android:gravity="center"
+                android:padding="10dp"
+                tools:text="12:00" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/special_requirements"
+            android:textColor="@color/black" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/special_requirements"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/shape_rectangle_grey"
+            android:gravity="start"
+            android:maxLines="10"
+            android:padding="5dp" />
+
+        <Button
+            android:id="@+id/send_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/round_red"
+            android:text="@string/send_order"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</ScrollView>

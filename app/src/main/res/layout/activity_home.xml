@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar_home" />
+
+        <FrameLayout
+            android:id="@+id/scroll_text_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/round_red">
+
+            <id.co.picklon.ui.view.ScrollTextView
+                android:id="@+id/home_scrolltext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:textColor="@color/white" />
+
+        </FrameLayout>
+
+        <cn.lightsky.infiniteindicator.InfiniteIndicator
+            android:id="@+id/home_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_margin="8dp"
+            app:indicator_type="indicator_default" />
+
+        <LinearLayout
+            android:id="@+id/home_status_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:baselineAligned="false">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:src="@drawable/ic_pickup" />
+
+                <TextView
+                    android:id="@+id/home_pickup_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/shape_oval_black"
+                    android:gravity="center"
+                    android:text="@string/zero"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:src="@drawable/ic_progress" />
+
+                <TextView
+                    android:id="@+id/home_process_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/shape_oval_black"
+                    android:gravity="center"
+                    android:text="@string/zero"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:src="@drawable/ic_delivered" />
+
+                <TextView
+                    android:id="@+id/home_deliverd_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/shape_oval_black"
+                    android:gravity="center"
+                    android:text="@string/zero"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <id.co.picklon.ui.view.HomeStatusBubbleLayout
+            android:id="@+id/home_bubble_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            app:bl_arrowDirection="top"
+            app:bl_arrowHeight="8dp"
+            app:bl_arrowPosition="0dp"
+            app:bl_arrowWidth="8dp"
+            app:bl_bubbleColor="@color/white"
+            app:bl_cornersRadius="6dp"
+            app:bl_strokeColor="@color/light_grey"
+            app:bl_strokeWidth="1dp"
+            tools:visibility="visible">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/home_status_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp" />
+
+            <TextView
+                android:id="@+id/home_no_order_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/no_orders_yet"
+                android:visibility="gone" />
+
+        </id.co.picklon.ui.view.HomeStatusBubbleLayout>
+
+        <id.co.picklon.ui.view.BottomNavigationView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary" />
+
+    </LinearLayout>
+
+    <include layout="@layout/drawer_home" />
+
+</android.support.v4.widget.DrawerLayout>

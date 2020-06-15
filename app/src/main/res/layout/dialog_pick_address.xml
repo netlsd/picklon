@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/pick_address_list"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp" />
+
+    <TextView
+        android:id="@+id/pick_address_add"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/rect_transparent"
+        android:drawableLeft="@drawable/ic_address_list"
+        android:drawablePadding="15dp"
+        android:gravity="center_vertical"
+        android:padding="8dp"
+        android:text="@string/add_address" />
+
+</LinearLayout>

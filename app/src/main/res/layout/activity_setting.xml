@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <id.co.picklon.ui.view.MenuView
+        android:id="@+id/setting_term"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:menuImage="@drawable/ic_term_service"
+        app:menuRightImage="@drawable/ic_right_arrow"
+        app:menuText="@string/term_of_service" />
+
+    <id.co.picklon.ui.view.MenuView
+        android:id="@+id/setting_about_us"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:menuImage="@drawable/ic_about_us"
+        app:menuRightImage="@drawable/ic_right_arrow"
+        app:menuText="@string/about_us" />
+
+    <id.co.picklon.ui.view.MenuView
+        android:id="@+id/setting_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:menuImage="@drawable/ic_feedback"
+        app:menuRightImage="@drawable/ic_right_arrow"
+        app:menuText="@string/feedback" />
+
+    <id.co.picklon.ui.view.MenuView
+        android:id="@+id/setting_change_mobile"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:menuImage="@drawable/ic_change_mobile"
+        app:menuRightImage="@drawable/ic_right_arrow"
+        app:menuText="@string/change_mobile" />
+
+    <TextView
+        android:id="@+id/setting_version"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="12dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/medium_red"
+        tools:text="@string/setting_version" />
+
+    <View style="@style/DividingLine" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:text="@string/notification" />
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/setting_notification_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:checked="true" />
+
+    </RelativeLayout>
+
+    <View style="@style/DividingLine" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:text="@string/voice" />
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/setting_voice_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp" />
+
+    </RelativeLayout>
+
+    <View style="@style/DividingLine" />
+
+</LinearLayout>

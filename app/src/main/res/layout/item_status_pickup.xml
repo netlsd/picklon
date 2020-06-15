@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/pickup_order_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/order_id_place_holder" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/prefix_status" />
+
+        <TextView
+            android:id="@+id/pickup_order_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/colorPrimary"
+            tools:text="Pick up Order" />
+
+    </LinearLayout>
+
+    <View style="@style/DividingLine" />
+
+    <LinearLayout
+        android:id="@+id/pickup_time_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:gravity="center_vertical"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/pickup_prefix_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/prefix_pickup_time" />
+
+        <TextView
+            android:id="@+id/pickup_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:drawableLeft="@drawable/ic_calender_small"
+            android:drawablePadding="5dp"
+            tools:text="2015-03-23" />
+
+        <TextView
+            android:id="@+id/pickup_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:drawableLeft="@drawable/ic_clocks_small"
+            android:drawablePadding="5dp"
+            tools:text="10:30" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/pickup_line1"
+        style="@style/DividingLine" />
+
+    <TextView
+        android:id="@+id/pickup_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:gravity="center_vertical"
+        android:minHeight="50dp"
+        tools:text="Pickup Address: Jl.add" />
+
+    <View
+        android:id="@+id/pickup_line2"
+        style="@style/DividingLine" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:paddingBottom="12dp"
+        android:paddingTop="12dp">
+
+        <TextView
+            android:id="@+id/pickup_store_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            tools:text="Store Name: ABC 123" />
+
+        <ImageView
+            android:id="@+id/pickup_store_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="12dp"
+            android:src="@drawable/ic_big_phone"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <View style="@style/DividingLine" />
+
+    <TextView
+        android:id="@+id/pickup_store_id"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:gravity="center_vertical"
+        tools:text="Store ID: 123" />
+
+    <View
+        android:id="@+id/pickup_line3"
+        style="@style/DividingLine" />
+
+    <RelativeLayout
+        android:id="@+id/pickup_pilot_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+
+        <TextView
+            android:id="@+id/pickup_pilot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            tools:text="Pickup Pilot: Andi" />
+
+        <ImageView
+            android:id="@+id/pickup_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="12dp"
+            android:src="@drawable/ic_big_phone" />
+
+    </RelativeLayout>
+
+</LinearLayout>

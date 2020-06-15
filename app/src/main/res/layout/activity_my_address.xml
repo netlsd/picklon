@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/my_address"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/my_address_edit"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/shape_rectangle_white"
+            android:text="@string/edit"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/my_address_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        tools:listitem="@layout/item_my_address" />
+
+    <Button
+        android:id="@+id/my_address_add_new"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@drawable/round_black"
+        android:text="@string/address_add_new"
+        android:textColor="@color/white" />
+
+    <LinearLayout
+        android:id="@+id/my_address_select_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/my_address_delete_selected"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_black"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/delete_selected"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/my_address_select_all"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/round_black"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/select_all"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</LinearLayout>
